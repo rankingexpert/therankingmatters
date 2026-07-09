@@ -1,0 +1,1222 @@
+html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Matters | #1 Local SEO Expert & Google Maps Specialist in Lahore</title>
+    <meta name="description" content="Partner with Ranking Matters, the leading local SEO expert Lahore business owners trust. Rank #1 on Google Maps, dominate the local map pack ranking, optimize your Google Business Profile, fix GMB suspension issues, and generate high-converting buyer leads to explode your local phone calls and inbound revenue.">
+    <link rel="canonical" href="https://rankingmatters.pk">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a12">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rankingmatters.pk">
+    <meta property="og:title" content="Ranking Matters | #1 Local SEO Expert in Lahore">
+    <meta property="og:description" content="Rank #1 on Google Maps, increase customer phone calls, generate qualified leads, and dominate your local industry using tailored data-driven Local SEO assets.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=1200&q=80">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://rankingmatters.pk">
+    <meta name="twitter:title" content="Ranking Matters | #1 Local SEO Expert in Lahore">
+    <meta name="twitter:description" content="Rank #1 on Google Maps, increase customer phone calls, generate qualified leads, and dominate your local industry using tailored data-driven Local SEO assets.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=1200&q=80">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Reset & Base --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-dark: #07070a;
+            --surface-dark: rgba(18, 18, 26, 0.7);
+            --surface-dark-pure: #0d0d14;
+            --border-dark: rgba(255, 255, 255, 0.06);
+            --text-dark: #f3f4f6;
+            --text-dark-muted: #9ca3af;
+            
+            --bg-light: #f9fafb;
+            --surface-light: rgba(255, 255, 255, 0.75);
+            --surface-light-pure: #ffffff;
+            --border-light: rgba(0, 0, 0, 0.06);
+            --text-light: #111827;
+            --text-light-muted: #4b5563;
+
+            --primary: #2563eb;
+            --primary-glow: rgba(37, 99, 235, 0.15);
+            --accent: #059669;
+            --accent-glow: rgba(5, 150, 105, 0.15);
+            --whatsapp: #25D366;
+            
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+            --radius-lg: 24px;
+            --radius-md: 14px;
+            --radius-sm: 8px;
+            --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        body.dark-mode {
+            --bg: var(--bg-dark);
+            --surface: var(--surface-dark);
+            --surface-pure: var(--surface-dark-pure);
+            --border: var(--border-dark);
+            --text: var(--text-dark);
+            --text-muted: var(--text-dark-muted);
+            --shadow: 0 20px 40px -15px rgba(0,0,0,0.7);
+            --nav-bg: rgba(7, 7, 10, 0.7);
+        }
+
+        body.light-mode {
+            --bg: var(--bg-light);
+            --surface: var(--surface-light);
+            --surface-pure: var(--surface-light-pure);
+            --border: var(--border-light);
+            --text: var(--text-light);
+            --text-muted: var(--text-light-muted);
+            --shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+            --nav-bg: rgba(249, 250, 251, 0.75);
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-sans); background-color: var(--bg); color: var(--text); overflow-x: hidden; transition: background-color 0.4s ease, color 0.4s ease; -webkit-font-smoothing: antialiased; }
+        
+        /* Layout */
+        .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        @media(max-width: 768px) { .container { padding: 0 24px; } }
+        
+        section { padding: 140px 0; position: relative; }
+        @media(max-width: 768px) { section { padding: 90px 0; } }
+
+        /* Scroll Progress Bar */
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); width: 0%; z-index: 2000; transition: width 0.1s ease; }
+
+        /* Loader Animation */
+        #loader { 
+            position: fixed; inset: 0; background: var(--bg-dark); z-index: 3000; 
+            display: flex; justify-content: center; align-items: center; 
+            transition: opacity 0.8s ease, visibility 0.8s ease; 
+        }
+        #loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        .loader-logo { font-size: 2rem; font-weight: 800; letter-spacing: -1px; color: #fff; }
+        .loader-logo span { color: var(--primary); }
+        .loader-spinner { width: 48px; height: 48px; border: 4px solid rgba(255,255,255,0.1); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin-right: 20px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loader-content { display: flex; align-items: center; }
+
+        /* Typography & Utilities */
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; }
+        .section-title { font-size: clamp(2.5rem, 4vw, 3.75rem); font-weight: 800; margin-bottom: 24px; text-align: center; }
+        .section-subtitle { font-size: clamp(1.1rem, 1.5vw, 1.35rem); color: var(--text-muted); text-align: center; max-width: 700px; margin: 0 auto 80px; font-weight: 400; line-height: 1.5; }
+        .text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .serif { font-family: var(--font-serif); font-style: italic; font-weight: 400; }
+        
+        /* Glassmorphism Elements */
+        .glass { background: var(--surface); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--border); box-shadow: var(--shadow); }
+        .card { border-radius: var(--radius-lg); padding: 48px; transition: var(--transition); position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-8px); border-color: rgba(37, 99, 235, 0.3); }
+
+        /* Buttons & Interactive Elements */
+        .btn-group { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 36px; font-weight: 600; font-size: 0.95rem; border-radius: var(--radius-md); transition: var(--transition); text-decoration: none; position: relative; overflow: hidden; cursor: pointer; border: none; }
+        .btn-primary { background: linear-gradient(135deg, var(--primary), #1d4ed8); color: #ffffff; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.6); }
+        .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: var(--border); transform: translateY(-2px); }
+        .btn-accent { background: linear-gradient(135deg, var(--accent), #047857); color: #ffffff; box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.4); }
+        .btn-accent:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -5px rgba(5, 150, 105, 0.6); }
+        .btn-whatsapp { background: #25D366; color: #ffffff; box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4); }
+        .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -5px rgba(37, 211, 102, 0.6); }
+        .btn-whatsapp svg { margin-right: 10px; }
+
+        /* Floating Components */
+        .blob { position: absolute; border-radius: 50%; filter: blur(120px); z-index: -1; opacity: 0.15; pointer-events: none; transition: var(--transition); }
+        
+        /* Sticky Navigation */
+        header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: var(--nav-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); transition: var(--transition); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 90px; }
+        .logo { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.04em; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
+        .logo span { color: var(--primary); }
+        .nav-menu { display: flex; align-items: center; gap: 40px; list-style: none; }
+        .nav-link { text-decoration: none; color: var(--text-muted); font-weight: 500; font-size: 0.95rem; transition: var(--transition); position: relative; }
+        .nav-link:hover, .nav-link.active { color: var(--text); }
+        .nav-link::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px; background: var(--primary); transition: var(--transition); }
+        .nav-link.active::after { width: 100%; }
+        .nav-actions { display: flex; align-items: center; gap: 20px; }
+        
+        /* Theme Toggle */
+        .theme-btn { background: none; border: 1px solid var(--border); width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--text); transition: var(--transition); font-size: 1.2rem; }
+        .theme-btn:hover { background: var(--border); }
+        .burger { display: none; cursor: pointer; background: none; border: none; padding: 8px; flex-direction: column; gap: 5px; }
+        .burger span { display: block; width: 24px; height: 2px; background: var(--text); transition: var(--transition); }
+
+        /* Hero Section */
+        .hero-wrapper { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; min-height: calc(100vh - 90px); padding-top: 40px; }
+        .hero-title { font-size: clamp(3rem, 5.5vw, 5rem); font-weight: 800; letter-spacing: -0.04em; margin-bottom: 32px; line-height: 1.05; }
+        .hero-desc { font-size: clamp(1.15rem, 1.8vw, 1.4rem); color: var(--text-muted); margin-bottom: 48px; max-width: 620px; font-weight: 400; line-height: 1.5; }
+        .hero-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 64px; padding-top: 40px; border-top: 1px solid var(--border); }
+        .metric-item h4 { font-size: 2.5rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+        .metric-item p { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+        .hero-visual { position: relative; width: 100%; height: 550px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); background: var(--surface-pure); }
+        .hero-img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .hero-badge { position: absolute; top: 32px; right: 32px; padding: 12px 24px; border-radius: 100px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 8px; z-index: 10; background: rgba(0,0,0,0.6); color: #fff; backdrop-filter: blur(8px); }
+        .badge-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 12px #10b981; }
+
+        /* Mouse Glow */
+        #mouse-glow { position: fixed; width: 400px; height: 400px; background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%); pointer-events: none; z-index: 1; transform: translate(-50%, -50%); transition: opacity 0.3s ease; opacity: 0; }
+
+        /* About Section */
+        .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 80px; align-items: center; }
+        .about-visual { position: relative; border-radius: var(--radius-lg); overflow: hidden; height: 600px; box-shadow: var(--shadow); background: var(--surface-pure); }
+        .about-image { width: 100%; height: 100%; object-fit: cover; }
+        .about-tag { font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.9rem; margin-bottom: 16px; display: block; }
+        .about-text p { font-size: 1.15rem; color: var(--text-muted); margin-bottom: 32px; line-height: 1.6; }
+
+        /* Why Choose Me */
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .why-card .icon-box { width: 64px; height: 64px; border-radius: var(--radius-md); background: var(--primary-glow); display: flex; align-items: center; justify-content: center; margin-bottom: 32px; color: var(--primary); font-size: 1.5rem; font-weight: bold; }
+        .why-card h3 { font-size: 1.5rem; margin-bottom: 16px; }
+        .why-card p { color: var(--text-muted); line-height: 1.5; }
+
+        /* Services Grid */
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .service-card { display: flex; flex-direction: column; height: 100%; }
+        .service-icon { font-size: 2.25rem; margin-bottom: 24px; display: block; }
+        .service-card h3 { font-size: 1.35rem; margin-bottom: 16px; font-weight: 700; }
+        .service-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px; flex-grow: 1; }
+        .service-features { list-style: none; border-top: 1px solid var(--border); padding-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+        .service-features li { font-size: 0.85rem; color: var(--text); display: flex; align-items: center; gap: 8px; }
+        .service-features li::before { content: '→'; color: var(--accent); font-weight: bold; }
+
+        /* Timeline */
+        .timeline-container { position: relative; max-width: 1000px; margin: 0 auto; }
+        .timeline-container::before { content: ''; position: absolute; left: 50%; top: 0; width: 2px; height: 100%; background: var(--border); transform: translateX(-50%); }
+        .timeline-step { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-bottom: 100px; position: relative; }
+        .timeline-step:last-child { margin-bottom: 0; }
+        .timeline-node { position: absolute; left: 50%; top: 40px; width: 48px; height: 48px; border-radius: 50%; background: var(--surface-pure); border: 2px solid var(--primary); display: flex; align-items: center; justify-content: center; transform: translateX(-50%); font-weight: 700; color: var(--primary); box-shadow: var(--shadow); z-index: 5; }
+        .timeline-content { padding: 40px; border-radius: var(--radius-lg); }
+        .timeline-step:nth-child(even) .timeline-content { grid-column: 2; }
+        .timeline-step:nth-child(odd) .timeline-content { grid-column: 1; text-align: right; }
+        .timeline-step:nth-child(odd) .timeline-content { display: flex; flex-direction: column; align-items: flex-end; }
+        .timeline-content h3 { font-size: 1.5rem; margin-bottom: 16px; }
+        .timeline-content p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; max-width: 400px; }
+
+        /* Industries */
+        .industries-container { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; max-width: 1100px; margin: 0 auto; }
+        .industry-pill { padding: 16px 32px; border-radius: 100px; font-weight: 600; font-size: 1rem; transition: var(--transition); cursor: default; border: 1px solid var(--border); }
+        .industry-pill:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: scale(1.05); }
+
+        /* Portfolio */
+        .portfolio-filter { display: flex; justify-content: center; gap: 12px; margin-bottom: 48px; flex-wrap: wrap; }
+        .filter-btn { padding: 12px 24px; border-radius: 100px; background: transparent; border: 1px solid var(--border); color: var(--text-muted); font-weight: 600; font-size: 0.9rem; transition: var(--transition); cursor: pointer; }
+        .filter-btn.active, .filter-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+        .portfolio-card { overflow: hidden; display: none; }
+        .portfolio-card.show { display: block; animation: fadeIn 0.6s forwards; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .portfolio-img-box { height: 380px; position: relative; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px; background: var(--surface-pure); }
+        .portfolio-img-box img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .portfolio-card:hover .portfolio-img-box img { transform: scale(1.05); }
+        .portfolio-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .portfolio-client { font-size: 0.85rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; }
+        .portfolio-growth { padding: 6px 14px; background: var(--accent-glow); color: var(--accent); border-radius: 100px; font-weight: 700; font-size: 0.85rem; }
+
+        /* Case Studies */
+        .case-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+        .case-card h3 { font-size: 1.75rem; margin: 24px 0 16px; }
+        .case-card p { color: var(--text-muted); line-height: 1.6; margin-bottom: 32px; }
+        .case-stats { display: flex; gap: 40px; border-top: 1px solid var(--border); padding-top: 24px; }
+        .case-stat-val { font-size: 2rem; font-weight: 800; color: var(--accent); }
+        .case-stat-lbl { font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-top: 4px; }
+
+        /* Pricing */
+        .pricing-toggle { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 56px; }
+        .pricing-toggle span { font-weight: 600; font-size: 1rem; }
+        .switch { position: relative; display: inline-block; width: 64px; height: 36px; }
+        .switch input { opacity: 0; width: 0; height: 0; }
+        .slider { position: absolute; cursor: pointer; inset: 0; background-color: var(--border); border-radius: 34px; transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .slider:before { position: absolute; content: ""; height: 28px; width: 28px; left: 4px; bottom: 4px; background-color: white; border-radius: 50%; transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        input:checked + .slider { background-color: var(--primary); }
+        input:checked + .slider:before { transform: translateX(28px); }
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; align-items: stretch; }
+        .pricing-card { display: flex; flex-direction: column; justify-content: space-between; }
+        .pricing-card.popular { border-color: var(--primary); box-shadow: 0 30px 60px -15px rgba(37,99,235,0.15); }
+        .pricing-card.popular::before { content: 'Most Popular'; position: absolute; top: 24px; right: 24px; background: var(--primary); color: #fff; padding: 6px 14px; border-radius: 100px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; }
+        .plan-name { font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; }
+        .plan-desc { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 32px; }
+        .plan-price { font-size: 3rem; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 32px; display: flex; align-items: baseline; }
+        .plan-price span { font-size: 1rem; color: var(--text-muted); font-weight: 500; margin-left: 8px; }
+        .plan-features { list-style: none; display: flex; flex-direction: column; gap: 16px; margin-bottom: 40px; border-top: 1px solid var(--border); padding-top: 32px; }
+        .plan-features li { display: flex; align-items: center; gap: 12px; font-size: 0.95rem; }
+        .plan-features li::before { content: '✓'; color: var(--accent); font-weight: 900; }
+
+        /* Testimonials */
+        .testimonial-outer { max-width: 900px; margin: 0 auto; position: relative; }
+        .testimonial-wrapper { overflow: hidden; width: 100%; }
+        .testimonial-track { display: flex; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); width: 100%; }
+        .testimonial-slide { min-width: 100%; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 20px; }
+        .testimonial-avatar { width: 90px; height: 90px; border-radius: 50%; object-fit: cover; margin-bottom: 32px; border: 3px solid var(--primary); background: #ddd; }
+        .testimonial-quote { font-size: clamp(1.25rem, 2.5vw, 1.85rem); font-weight: 500; line-height: 1.5; color: var(--text); margin-bottom: 32px; position: relative; max-width: 800px; }
+        .testimonial-quote::before { content: '“'; font-family: var(--font-serif); font-size: 6rem; position: absolute; top: -40px; left: -20px; opacity: 0.08; color: var(--primary); }
+        .testimonial-author { font-weight: 700; font-size: 1.1rem; margin-bottom: 4px; }
+        .testimonial-role { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+        .slider-controls { display: flex; justify-content: center; gap: 16px; margin-top: 48px; }
+        .slider-btn { width: 52px; height: 52px; border-radius: 50%; background: var(--surface-pure); border: 1px solid var(--border); color: var(--text); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: var(--transition); font-size: 1.2rem; }
+        .slider-btn:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+        /* Reviews */
+        .reviews-summary { display: flex; align-items: center; justify-content: center; gap: 40px; margin-bottom: 56px; border-bottom: 1px solid var(--border); padding-bottom: 40px; flex-wrap: wrap; }
+        .rating-huge { font-size: 4rem; font-weight: 800; color: var(--text); line-height: 1; }
+        .rating-stars { color: #f59e0b; font-size: 1.5rem; margin-bottom: 4px; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .review-card { padding: 32px; border-radius: var(--radius-md); }
+        .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+        .reviewer-info { display: flex; align-items: center; gap: 12px; }
+        .reviewer-img { width: 44px; height: 44px; border-radius: 50%; background: #ddd; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; color: #111; }
+        .reviewer-name { font-weight: 600; font-size: 0.95rem; }
+        .reviewer-meta { font-size: 0.8rem; color: var(--text-muted); }
+        .review-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+
+        /* Skills */
+        .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
+        .skill-item h4 { font-size: 1.1rem; margin-bottom: 12px; display: flex; justify-content: space-between; }
+        .skill-bar-bg { height: 6px; background: var(--border); border-radius: 10px; overflow: hidden; }
+        .skill-bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary), var(--accent)); width: 0%; transition: width 2s cubic-bezier(0.16, 1, 0.3, 1); border-radius: 10px; }
+
+        /* Certifications */
+        .cert-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+        .cert-card { padding: 32px; border-radius: var(--radius-md); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .cert-icon { font-size: 2.5rem; color: var(--primary); margin-bottom: 16px; }
+        .cert-card h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+        .cert-card p { font-size: 0.85rem; color: var(--text-muted); }
+
+        /* Tools */
+        .tools-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .tool-card { display: flex; align-items: center; gap: 20px; padding: 24px; border-radius: var(--radius-md); }
+        .tool-avatar-box { width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--surface-pure); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--primary); font-size: 1.25rem; }
+        .tool-card h4 { font-size: 1.1rem; font-weight: 600; }
+
+        /* FAQ */
+        .faq-max { max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+        .faq-item { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); transition: var(--transition); }
+        .faq-trigger { width: 100%; padding: 28px 32px; background: var(--surface-pure); border: none; text-align: left; color: var(--text); font-size: 1.2rem; font-weight: 700; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+        .faq-icon-state { font-size: 1.5rem; transition: var(--transition); transform-origin: center; font-weight: 300; }
+        .faq-panel { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1); background: var(--surface-pure); }
+        .faq-panel-content { padding: 0 32px 32px; color: var(--text-muted); line-height: 1.6; font-size: 1.05rem; }
+        .faq-item.open { border-color: var(--primary); }
+        .faq-item.open .faq-icon-state { transform: rotate(45deg); color: var(--primary); }
+
+        /* Blog */
+        .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .blog-card { overflow: hidden; }
+        .blog-img-cover { height: 240px; overflow: hidden; border-radius: var(--radius-md); margin-bottom: 24px; background: var(--surface-pure); }
+        .blog-img-cover img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .blog-card:hover .blog-img-cover img { transform: scale(1.04); }
+        .blog-date { font-size: 0.8rem; font-weight: 700; color: var(--primary); text-transform: uppercase; display: block; margin-bottom: 12px; letter-spacing: 0.05em; }
+        .blog-card h3 { font-size: 1.35rem; margin-bottom: 12px; line-height: 1.3; }
+        .blog-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; }
+
+        /* Contact Info - No Form */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .contact-panel-title { font-size: 2.25rem; font-weight: 800; margin-bottom: 24px; }
+        .contact-lead-desc { color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; margin-bottom: 40px; }
+        .contact-channel-list { list-style: none; display: flex; flex-direction: column; gap: 24px; }
+        .contact-channel-item { display: flex; align-items: center; gap: 20px; }
+        .channel-icon-circle { width: 52px; height: 52px; border-radius: 50%; background: var(--primary-glow); color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        .channel-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em; }
+        .channel-value { font-size: 1.1rem; font-weight: 600; text-decoration: none; color: var(--text); }
+        .contact-cta-box { padding: 56px; border-radius: var(--radius-lg); text-align: center; }
+        .contact-cta-box h3 { font-size: 2rem; margin-bottom: 20px; }
+        .contact-cta-box p { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 32px; line-height: 1.6; }
+        .btn-whatsapp-large { background: #25D366; color: #fff; padding: 20px 48px; font-size: 1.1rem; border-radius: var(--radius-md); text-decoration: none; display: inline-flex; align-items: center; gap: 12px; transition: var(--transition); box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4); }
+        .btn-whatsapp-large:hover { transform: translateY(-3px); box-shadow: 0 15px 35px -5px rgba(37, 211, 102, 0.6); }
+        .btn-whatsapp-large svg { width: 28px; height: 28px; fill: #fff; }
+
+        /* Footer */
+        footer { background: var(--surface-pure); border-top: 1px solid var(--border); padding: 100px 0 40px; }
+        .footer-grid { display: grid; grid-template-columns: 1.2fr repeat(3, 0.6fr); gap: 60px; margin-bottom: 80px; }
+        .footer-brand p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; max-width: 320px; }
+        .footer-col h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 24px; color: var(--text); }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+        .footer-links a { text-decoration: none; color: var(--text-muted); font-size: 0.95rem; transition: var(--transition); }
+        .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+        .footer-base { display: flex; justify-content: space-between; align-items: center; padding-top: 40px; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 20px; }
+        .footer-copyright { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* Fixed Actions */
+        #fixed-actions-container { position: fixed; bottom: 32px; right: 32px; display: flex; flex-direction: column; gap: 12px; z-index: 1500; }
+        .sticky-action-trigger { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: var(--transition); font-weight: 600; border: none; }
+        .sticky-btn-whatsapp { background: #25D366; color: #fff; width: auto; padding: 0 24px; border-radius: 100px; font-size: 0.9rem; gap: 8px; }
+        .sticky-btn-top { background: var(--surface-pure); border: 1px solid var(--border); color: var(--text); font-size: 1.2rem; opacity: 0; visibility: hidden; }
+        .sticky-btn-top.show { opacity: 1; visibility: visible; }
+        .sticky-btn-top:hover { transform: translateY(-4px); }
+        .sticky-btn-whatsapp svg { width: 20px; height: 20px; fill: #fff; }
+
+        /* Responsive */
+        @media(max-width: 1200px) {
+            .why-grid, .services-grid, .reviews-grid, .blog-grid { grid-template-columns: repeat(2, 1fr); }
+            .tools-grid, .cert-grid { grid-template-columns: repeat(3, 1fr); }
+            .pricing-grid { grid-template-columns: 1fr; max-width: 550px; margin: 0 auto; }
+        }
+        @media(max-width: 992px) {
+            .hero-wrapper { grid-template-columns: 1fr; text-align: center; }
+            .hero-desc { margin-left: auto; margin-right: auto; }
+            .btn-group { justify-content: center; }
+            .hero-metrics { max-width: 600px; margin: 64px auto 0; }
+            .hero-visual { height: 450px; }
+            .about-grid, .contact-grid, .case-grid { grid-template-columns: 1fr; gap: 48px; }
+            .about-visual { height: 400px; }
+            .timeline-container::before { left: 24px; }
+            .timeline-step { grid-template-columns: 1fr; gap: 32px; margin-bottom: 64px; }
+            .timeline-node { left: 24px; transform: translateX(-50%); }
+            .timeline-step:nth-child(even) .timeline-content, .timeline-step:nth-child(odd) .timeline-content { grid-column: 1; text-align: left; padding-left: 64px; align-items: flex-start; }
+            .timeline-content p { max-width: 100%; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+        @media(max-width: 768px) {
+            .nav-menu { display: none; position: absolute; top: 90px; left: 0; width: 100%; background: var(--surface-pure); border-bottom: 1px solid var(--border); flex-direction: column; padding: 40px; gap: 24px; text-align: center; }
+            .nav-menu.active { display: flex; }
+            .burger { display: flex; }
+            .why-grid, .services-grid, .reviews-grid, .blog-grid, .tools-grid, .cert-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="dark-mode">
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-logo">Ranking<span>Matters</span></div>
+        </div>
+    </div>
+
+    <!-- Mouse Glow System -->
+    <div id="mouse-glow"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Ranking<span>Matters</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="index.html#case-studies" class="nav-link">Results</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-btn" id="theme-toggle" aria-label="Toggle Theme">🌓</button>
+                <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp" style="padding: 10px 20px; font-size: 0.85rem;">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+                <button class="burger" id="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="blob" style="width: 500px; height: 500px; background: var(--primary); top: 10%; left: -10%;"></div>
+        <div class="container hero-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-title">Dominate Google Maps. <span class="text-gradient">Explode Your Local Revenue.</span></h1>
+                <p class="hero-desc"><strong>Ranking Matters</strong>, the leading <strong>Local SEO Expert in Lahore</strong>, uses advanced georadial proximity mapping, precision schema architecture, and bulletproof <strong>Google Business Profile optimization</strong> to rank your business where high-intent buyers are looking.</p>
+                <div class="btn-group">
+                    <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Chat on WhatsApp
+                    </a>
+                    <a href="services.html" class="btn btn-secondary">Explore Our Arsenal</a>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric-item">
+                        <h4 class="counter" data-target="87">0%</h4>
+                        <p>Avg Call Volume Boost</p>
+                    </div>
+                    <div class="metric-item">
+                        <h4 class="counter" data-target="150">0+</h4>
+                        <p>GMB Suspensions Fixed</p>
+                    </div>
+                    <div class="metric-item">
+                        <h4 class="counter" data-target="12">0M+</h4>
+                        <p>Leads Generated</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-badge"><span class="badge-dot"></span>Live Map Pack Specialist</div>
+                <img src="https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=800&q=80" alt="Local SEO Analytics Dashboard" class="hero-img" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container about-grid">
+            <div class="about-visual">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=85" alt="Data Analysis and Local SEO Mapping Strategy" class="about-image" loading="lazy">
+            </div>
+            <div class="about-text">
+                <span class="about-tag">Who We Are</span>
+                <h2 class="section-title" style="text-align: left; font-size: 2.75rem;">Rankings Are Completely Useless Without Inbound Revenue.</h2>
+                <p><strong>Ranking Matters</strong> is a performance-driven <strong>Local SEO</strong> and digital optimization agency specializing in helping local businesses claim the #1 spot on Google Maps. We focus entirely on hyper-local search engine optimization, reverse-engineering Google's local algorithms using deep georadial mapping and custom JSON-LD semantic architecture.</p>
+                <p>Whether you need complete <strong>Google Business Profile optimization</strong>, systematic citation cleanup, or critical <strong>GMB suspension recovery</strong>, we build data-driven local assets engineered to turn casual online searchers into direct customer phone calls and predictable revenue.</p>
+                <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat with Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Engineered For <span class="text-gradient">Local Domination</span></h2>
+            <p class="section-subtitle">Why leading contractors, home service giants, and retail brands partner with <strong>Ranking Matters</strong> to scale their local visibility and achieve market leadership.</p>
+            <div class="why-grid">
+                <div class="card glass why-card">
+                    <div class="icon-box">01</div>
+                    <h3>Georadial Mapping</h3>
+                    <p>We systematically expand your search radius across multiple target zip codes and neighborhoods, not just outside your office door. This advanced technique is a cornerstone of our <strong>local SEO expert</strong> approach.</p>
+                </div>
+                <div class="card glass why-card">
+                    <div class="icon-box">02</div>
+                    <h3>GMB Suspension Recovery</h3>
+                    <p>Got hit with a hard or soft suspension? Our <strong>GMB suspension recovery</strong> specialists locate the exact algorithmic triggers, clean up contaminated data, and get you reinstated fast.</p>
+                </div>
+                <div class="card glass why-card">
+                    <div class="icon-box">03</div>
+                    <h3>Semantic Schema Build</h3>
+                    <p>We hardcode tailored local JSON-LD semantic markups directly into your site structure, making your relevance crystal clear to crawlers. This technical <strong>local SEO</strong> tactic gives you a significant edge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">Our Tactical <span class="text-gradient">SEO Services</span></h2>
+            <p class="section-subtitle">Data-backed scaling strategies deployed precisely to hijack high-intent customer leads from your top local competitors.</p>
+            <div class="services-grid">
+                <div class="card glass service-card">
+                    <span class="service-icon">📍</span>
+                    <h3>Google Business Profile Optimization</h3>
+                    <p>Complete structural builds and monthly optimization mechanics designed to securely place your profile into the coveted Google 3-Pack. Our <strong>Google Business Profile optimization</strong> service ensures your listing is fully optimized for local searches.</p>
+                    <ul class="service-features">
+                        <li>Keyword Category Structuring</li>
+                        <li>Geo-Targeted Asset Stacking</li>
+                        <li>Continuous Audit Maintenance</li>
+                    </ul>
+                </div>
+                <div class="card glass service-card">
+                    <span class="service-icon">🔧</span>
+                    <h3>GMB Suspension & Recovery</h3>
+                    <p>Emergency restoration services for suspended accounts. We diagnose guidelines violations, rewrite business representations, and file rapid appeals. Trust <strong>Ranking Matters</strong> for reliable <strong>GMB suspension recovery</strong>.</p>
+                    <ul class="service-features">
+                        <li>Contamination Data Cleanup</li>
+                        <li>Address & Document Auditing</li>
+                        <li>Direct Google Support Pipeline</li>
+                    </ul>
+                </div>
+                <div class="card glass service-card">
+                    <span class="service-icon">🏗️</span>
+                    <h3>Local Citation Engineering</h3>
+                    <p>Building flawless tier-1 business citations and structural directories while aggressively fixing historical name, address, and phone variations. This foundational <strong>local SEO</strong> work is critical for ranking success.</p>
+                    <ul class="service-features">
+                        <li>Aggressive Inconsistent NAP Cleanup</li>
+                        <li>Premium Local Network Placement</li>
+                        <li>Hyper-Localized Backlink Auditing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">The Blueprint To <span class="text-gradient">The Top Spot</span></h2>
+            <p class="section-subtitle">Our calculated, step-by-step optimization roadmap that forces algorithmic growth and predictable market dominance.</p>
+            <div class="timeline-container">
+                <div class="timeline-step">
+                    <div class="timeline-node">1</div>
+                    <div class="card glass timeline-content">
+                        <h3>Deep Structural Audit</h3>
+                        <p>We trace listing contamination issues, keyword-stuffing triggers, tracking errors, and rank leaks across the web map landscape.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-node">2</div>
+                    <div class="card glass timeline-content">
+                        <h3>Georadial Mapping Deployment</h3>
+                        <p>We configure localized semantic web footers, custom coordinate structures, and JSON-LD markup to map and expand search authority.</p>
+                    </div>
+                </div>
+                <div class="timeline-step">
+                    <div class="timeline-node">3</div>
+                    <div class="card glass timeline-content">
+                        <h3>Radical Authority Scaling</h3>
+                        <p>Deploying specialized review capture automation networks and hyper-local backlinking assets to force algorithmic visibility gains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Industries -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">Industries We <span class="text-gradient">Completely Dominate</span></h2>
+            <p class="section-subtitle">Our strategies are perfectly fine-tuned for high-value business models requiring real-time inbound commercial calls.</p>
+            <div class="industries-container">
+                <div class="card glass industry-pill">HVAC & Mechanical</div>
+                <div class="card glass industry-pill">Emergency Plumbing</div>
+                <div class="card glass industry-pill">Home Contracting & Roofing</div>
+                <div class="card glass industry-pill">Premium Bridal Studios</div>
+                <div class="card glass industry-pill">Commercial Janitorial Services</div>
+                <div class="card glass industry-pill">Real Estate Brokerages</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="case-studies">
+        <div class="container">
+            <h2 class="section-title">Real Proven <span class="text-gradient">Client Results</span></h2>
+            <p class="section-subtitle">Verifiable map pack rank improvements, call acceleration data, and market takeover metrics across our portfolio.</p>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Profiles</button>
+                <button class="filter-btn" data-filter="home-services">Home Services</button>
+                <button class="filter-btn" data-filter="retail">Boutique & Retail</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="card glass portfolio-card show" data-category="home-services">
+                    <div class="portfolio-img-box">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7eed?auto=format&fit=crop&w=600&q=80" alt="HVAC Dispatch Routing Operations" loading="lazy">
+                    </div>
+                    <div class="portfolio-meta">
+                        <span class="portfolio-client">Ricky's Heating & Cooling</span>
+                        <span class="portfolio-growth">+142% Calls</span>
+                    </div>
+                    <h3>GMB Optimization & Regional Map Radius Expansion</h3>
+                    <p style="color: var(--text-muted); margin-top: 12px;">By partnering with <strong>Ranking Matters</strong>, this HVAC client saw a massive surge in phone calls after we optimized their <strong>Google Business Profile</strong>.</p>
+                </div>
+                <div class="card glass portfolio-card show" data-category="retail">
+                    <div class="portfolio-img-box">
+                        <img src="https://images.unsplash.com/photo-1594552072238-b8a33785b261?auto=format&fit=crop&w=600&q=80" alt="Luxury Studio Visual Asset Elements" loading="lazy">
+                    </div>
+                    <div class="portfolio-meta">
+                        <span class="portfolio-client">Noor Bridal Studio</span>
+                        <span class="portfolio-growth">#1 Position</span>
+                    </div>
+                    <h3>High-End Luxury Visual Stacking & Urdu Local Search Alignment</h3>
+                    <p style="color: var(--text-muted); margin-top: 12px;">Our <strong>local SEO</strong> strategies helped this bridal studio achieve the #1 spot in local search.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <div class="case-grid">
+                <div class="card glass case-card">
+                    <span style="font-size: 2.5rem;">🏢</span>
+                    <h3>A.M. Janitorial Services</h3>
+                    <p>Listing hit with an aggressive hard suspension due to historical keyword-stuffing metadata errors. <strong>Ranking Matters</strong> identified the systemic conflict markers, executed a total data cleanup protocol, filed a targeted appeal, and successfully restored the profile within 72 hours.</p>
+                    <div class="case-stats">
+                        <div>
+                            <div class="case-stat-val">100%</div>
+                            <div class="case-stat-lbl">Profile Restored</div>
+                        </div>
+                        <div>
+                            <div class="case-stat-val">0</div>
+                            <div class="case-stat-lbl">Data Loss Risk</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card glass case-card">
+                    <span style="font-size: 2.5rem;">🏗️</span>
+                    <h3>Attic World LLC</h3>
+                    <p>Faced absolute zero visibility in hyper-competitive surrounding service areas. <strong>Ranking Matters</strong> deployed customized geo-radial landing pages and structurally linked localized coordinate schema maps, boosting direct inbound organic phone leads across 14 additional regional zip codes.</p>
+                    <div class="case-stats">
+                        <div>
+                            <div class="case-stat-val">+89%</div>
+                            <div class="case-stat-lbl">Inbound Leads</div>
+                        </div>
+                        <div>
+                            <div class="case-stat-val">14</div>
+                            <div class="case-stat-lbl">Zip Codes Captured</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container">
+            <h2 class="section-title">Predictable <span class="text-gradient">ROI Pricing</span></h2>
+            <p class="section-subtitle">No long-term contracts. No useless vanity metrics. Just pure, aggressive optimization mechanics built to scale local businesses.</p>
+            <div class="pricing-toggle">
+                <span>Monthly Rate</span>
+                <label class="switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span>Annual Saver</span>
+            </div>
+            <div class="pricing-grid">
+                <div class="card glass pricing-card">
+                    <div>
+                        <div class="plan-name">Local Spark</div>
+                        <p class="plan-desc">Perfect for small brick-and-mortar storefronts looking to capture immediate local traffic.</p>
+                        <div class="plan-price">₨ 50,000<span>/mo</span></div>
+                        <ul class="plan-features">
+                            <li>Google Business Profile Setup</li>
+                            <li>Targeted Core Citation Building</li>
+                            <li>Standard Geo-Tag Asset Postings</li>
+                            <li>Monthly Core Rank Monitoring</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp">Get Started</a>
+                </div>
+                <div class="card glass pricing-card popular">
+                    <div>
+                        <div class="plan-name">Map Dominator</div>
+                        <p class="plan-desc">Engineered for service area businesses and contractors targeting rapid regional growth.</p>
+                        <div class="plan-price">₨ 70,000<span>/mo</span></div>
+                        <ul class="plan-features">
+                            <li>Advanced Georadial Mapping</li>
+                            <li>Tailored Local Schema Deployment</li>
+                            <li>Deep Tier-1 Citation Cleanup</li>
+                            <li>Suspension Guard Monitoring</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/923314349664" target="_blank" class="btn btn-primary">Dominate Locally</a>
+                </div>
+                <div class="card glass pricing-card">
+                    <div>
+                        <div class="plan-name">Enterprise Market Takeover</div>
+                        <p class="plan-desc">For multi-location corporate entities wanting complete market takeover across multiple cities.</p>
+                        <div class="plan-price">₨ 90,000<span>/mo</span></div>
+                        <ul class="plan-features">
+                            <li>Multi-Profile Network Structuring</li>
+                            <li>High-Stakes Priority Support Line</li>
+                            <li>Custom Organic Landing Pages</li>
+                            <li>Premium Dedicated Link Campaign</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/923314349664" target="_blank" class="btn btn-secondary">Contact Enterprise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">What Our Partner <span class="text-gradient">Networks Say</span></h2>
+            <p class="section-subtitle">Real feedback from business owners experiencing true organic growth and operational scaling.</p>
+            <div class="testimonial-outer">
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <div class="testimonial-slide">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Client Testimonial Feature" class="testimonial-avatar" loading="lazy">
+                            <p class="testimonial-quote">"Our business map profile listing was completely invisible past a 2-mile radius. Within just 60 days of partnering with <strong>Ranking Matters</strong>, we were actively receiving calls from neighborhoods we could never organically reach before."</p>
+                            <div class="testimonial-author">Sarah Jenkins</div>
+                            <div class="testimonial-role">Marketing Director, Comfort HVAC Group</div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Client Business Owner Representative" class="testimonial-avatar" loading="lazy">
+                            <p class="testimonial-quote">"After dealing with a sudden, devastating profile suspension that crippled our call volumes, <strong>Ranking Matters</strong> identified the issue instantly and got us back online in days. Their <strong>GMB suspension recovery</strong> skills are unmatched."</p>
+                            <div class="testimonial-author">David Miller</div>
+                            <div class="testimonial-role">Founder, AM Cleaners Network</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="slide-prev">←</button>
+                    <button class="slider-btn" id="slide-next">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section>
+        <div class="container">
+            <div class="reviews-summary">
+                <div class="rating-huge">5.0</div>
+                <div>
+                    <div class="rating-stars">★★★★★</div>
+                    <p style="color: var(--text-muted); font-weight: 600;">Based on 85+ Live Verified Google Business Reviews</p>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <div class="card glass review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">TM</div>
+                            <div>
+                                <div class="reviewer-name">Thomas Matthews</div>
+                                <div class="reviewer-meta">Local Guide • 5 Stars</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text"><strong>Ranking Matters</strong> is a professional <strong>local SEO</strong> specialist. Their tracking audits and schema configuration directly generated high-value leads within weeks.</p>
+                </div>
+                <div class="card glass review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">AK</div>
+                            <div>
+                                <div class="reviewer-name">Asim Khan</div>
+                                <div class="reviewer-meta">Business Owner • 5 Stars</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Best <strong>GMB optimization</strong> experts in Lahore. <strong>Ranking Matters</strong> is highly knowledgeable in algorithm shifts, link auditing, and profile restoration mechanics.</p>
+                </div>
+                <div class="card glass review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <div class="reviewer-img">BR</div>
+                            <div>
+                                <div class="reviewer-name">Brian Rogers</div>
+                                <div class="reviewer-meta">Operations Lead • 5 Stars</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">They managed our data expansion cleanly across hundreds of spreadsheet tracks. Excellent ongoing reporting frameworks and reliable communications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">Our Technical <span class="text-gradient">Competence Matrix</span></h2>
+            <p class="section-subtitle">We don't guess. We program and execute clean architectures to force algorithmic compliance.</p>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4><span>GMB Troubleshooting & Verification Mastery</span><span>98%</span></h4>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="98%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>Georadial Proximity Optimization Architecture</span><span>95%</span></h4>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>Local JSON-LD Semantic Web Programming</span><span>92%</span></h4>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <h4><span>Inconsistent Directory Data Remediation</span><span>96%</span></h4>
+                    <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="96%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+        <div class="container">
+            <div class="cert-grid">
+                <div class="card glass cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h4>Google Certified</h4>
+                    <p>Advanced Digital Platform Expert</p>
+                </div>
+                <div class="card glass cert-card">
+                    <div class="cert-icon">📈</div>
+                    <h4>Enterprise SEO</h4>
+                    <p>Large-Scale Matrix Data Tracking</p>
+                </div>
+                <div class="card glass cert-card">
+                    <div class="cert-icon">⚛️</div>
+                    <h4>Web Dev Build</h4>
+                    <p>React & Netlify Frontend Specialist</p>
+                </div>
+                <div class="card glass cert-card">
+                    <div class="cert-icon">🛡️</div>
+                    <h4>Risk Management</h4>
+                    <p>GMB Enforcement Guidelines Audits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">Enterprise Tools We Deploy</h2>
+            <p class="section-subtitle">We analyze your tracking footprint with the most premium analytical systems in the industry.</p>
+            <div class="tools-grid">
+                <div class="card glass tool-card">
+                    <div class="tool-avatar-box">Ah</div>
+                    <h4>Ahrefs Pro</h4>
+                </div>
+                <div class="card glass tool-card">
+                    <div class="tool-avatar-box">Sm</div>
+                    <h4>Semrush Matrix</h4>
+                </div>
+                <div class="card glass tool-card">
+                    <div class="tool-avatar-box">Sc</div>
+                    <h4>Screaming Frog</h4>
+                </div>
+                <div class="card glass tool-card">
+                    <div class="tool-avatar-box">Wh</div>
+                    <h4>BrightLocal</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+            <p class="section-subtitle">Clear, straightforward answers about local search optimization mechanics and profile security.</p>
+            <div class="faq-max">
+                <div class="faq-item">
+                    <button class="faq-trigger">What causes a sudden Google Business Profile suspension? <span class="faq-icon-state">+</span></button>
+                    <div class="faq-panel">
+                        <div class="faq-panel-content">Suspensions are usually triggered by aggressive name changes (keyword stuffing), changing address markers to unverified locations, data mismatch fields across directories, or sudden system sweeps targeting specific high-risk local service categories.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger">How do you increase the map ranking radius? <span class="faq-icon-state">+</span></button>
+                    <div class="faq-panel">
+                        <div class="faq-panel-content">We scale proximity metrics by building geo-contextual relevance through structured backend coordinates, locally optimized landing page networks, nested schema configurations, and hyper-targeted contextual link profiles.</div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-trigger">Do you require long-term mandatory contracts? <span class="faq-icon-state">+</span></button>
+                    <div class="faq-panel">
+                        <div class="faq-panel-content">No, all our optimization campaigns run on flexible month-to-month commitments. We believe in keeping your business based entirely on transparent performance, calls generated, and verifiable ROI.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">Our Local <span class="text-gradient">SEO Insights</span></h2>
+            <p class="section-subtitle">Algorithmic guidelines break downs, optimization deep-dives, and technical tutorials to keep you ahead.</p>
+            <div class="blog-grid">
+                <div class="card glass blog-card">
+                    <div class="blog-img-cover">
+                        <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=500&q=80" alt="Local SEO Optimization" loading="lazy">
+                    </div>
+                    <span class="blog-date">Local Strategy</span>
+                    <h3>How to Overcome Proximity Algorithmic Restrictions</h3>
+                    <p>Discover the exact steps required to claim maps package positioning outside your immediate physical operational zip code location safely.</p>
+                </div>
+                <div class="card glass blog-card">
+                    <div class="blog-img-cover">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80" alt="Data Analytics" loading="lazy">
+                    </div>
+                    <span class="blog-date">Suspension Guide</span>
+                    <h3>The Ultimate Playbook for Rapid GMB Reinstatements</h3>
+                    <p>A calculated walkthrough mapping out how to prepare clean official documentation to resolve hard Google Business suspensions smoothly.</p>
+                </div>
+                <div class="card glass blog-card">
+                    <div class="blog-img-cover">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=500&q=80" alt="JSON-LD Schema" loading="lazy">
+                    </div>
+                    <span class="blog-date">Technical Schema</span>
+                    <h3>Mastering JSON-LD Setup for Local Business Growth</h3>
+                    <p>Learn how to precisely embed coordinate points and semantic relationship links into website codebases to speed up page crawl tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - No Form, WhatsApp Focused -->
+    <section id="contact">
+        <div class="container contact-grid">
+            <div class="contact-panel-info">
+                <h2 class="contact-panel-title">Let's Claim Your <span class="text-gradient">Local Market</span></h2>
+                <p class="contact-lead-desc">Get in touch with us today. We'll analyze your local mapping visibility footprint completely free of charge and provide clear scaling routes.</p>
+                <ul class="contact-channel-list">
+                    <li class="contact-channel-item">
+                        <div class="channel-icon-circle">📞</div>
+                        <div>
+                            <div class="channel-label">Direct Growth Line</div>
+                            <a href="tel:+923314349664" class="channel-value">+92 331 4349664</a>
+                        </div>
+                    </li>
+                    <li class="contact-channel-item">
+                        <div class="channel-icon-circle">💬</div>
+                        <div>
+                            <div class="channel-label">WhatsApp</div>
+                            <a href="https://wa.me/923314349664" target="_blank" class="channel-value">+92 331 4349664</a>
+                        </div>
+                    </li>
+                    <li class="contact-channel-item">
+                        <div class="channel-icon-circle">✉️</div>
+                        <div>
+                            <div class="channel-label">Secure Matrix Inbox</div>
+                            <a href="mailto:shanyaqoob730@gmail.com" class="channel-value">shanyaqoob730@gmail.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-channel-item">
+                        <div class="channel-icon-circle">📍</div>
+                        <div>
+                            <div class="channel-label">Operational Hub</div>
+                            <div class="channel-value" style="font-weight: 500;">Thokar, Lahore, Pakistan</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="card glass contact-cta-box">
+                <span style="font-size: 4rem; display: block; margin-bottom: 20px;">💬</span>
+                <h3>Start Your <span class="text-gradient">Growth Journey</span> Today</h3>
+                <p>Connect with us directly on WhatsApp for a free consultation. Our team of <strong>Local SEO experts</strong> is ready to help you dominate the Google Maps pack and generate high-quality leads.</p>
+                <a href="https://wa.me/923314349664" target="_blank" class="btn-whatsapp-large">
+                    <svg viewBox="0 0 24 24" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Ranking<span>Matters</span></a>
+                <p>Advanced algorithmic optimization mechanics engineered explicitly to scale inbound customer commercial phone calls and local visibility indicators.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">GBP Optimization</a></li>
+                    <li><a href="services.html">GMB Recovery</a></li>
+                    <li><a href="services.html">Local Citations</a></li>
+                    <li><a href="services.html">Landing Pages</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:+923314349664">+92 331 4349664</a></li>
+                    <li><a href="mailto:shanyaqoob730@gmail.com">shanyaqoob730@gmail.com</a></li>
+                    <li><a href="https://wa.me/923314349664" target="_blank">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-base">
+            <div class="footer-copyright">&copy; 2026 <strong>Ranking Matters</strong>. All Rights Reserved.</div>
+            <a href="https://wa.me/923314349664" target="_blank" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+            </a>
+        </div>
+    </footer>
+
+    <!-- Fixed Actions -->
+    <div id="fixed-actions-container">
+        <a href="https://wa.me/923314349664" target="_blank" class="sticky-action-trigger sticky-btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+        </a>
+        <button class="sticky-action-trigger sticky-btn-top" id="back-to-top" aria-label="Scroll to Top">↑</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Hide loader after page loads
+            const loader = document.getElementById('loader');
+            setTimeout(function() {
+                loader.classList.add('hidden');
+                triggerSkillAnimations();
+            }, 800);
+
+            // Scroll Progress
+            window.addEventListener('scroll', function() {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById('scroll-progress').style.width = scrolled + '%';
+                
+                const btt = document.getElementById('back-to-top');
+                if (window.scrollY > 600) {
+                    btt.classList.add('show');
+                } else {
+                    btt.classList.remove('show');
+                }
+            });
+
+            // Back to Top
+            document.getElementById('back-to-top').addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Mobile Menu
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            // Theme Toggle
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                document.body.classList.toggle('light-mode');
+            });
+
+            // Mouse Glow
+            const glow = document.getElementById('mouse-glow');
+            document.addEventListener('mousemove', function(e) {
+                glow.style.opacity = '1';
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+            });
+            document.addEventListener('mouseleave', function() {
+                glow.style.opacity = '0';
+            });
+
+            // Portfolio Filter
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioCards = document.querySelectorAll('.portfolio-card');
+            filterBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(function(b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    const target = btn.getAttribute('data-filter');
+                    portfolioCards.forEach(function(card) {
+                        if (target === 'all' || card.getAttribute('data-category') === target) {
+                            card.classList.add('show');
+                        } else {
+                            card.classList.remove('show');
+                        }
+                    });
+                });
+            });
+
+            // Pricing Toggle - Update PKR prices
+            const billingToggle = document.getElementById('billing-toggle');
+            const pricingVals = document.querySelectorAll('.plan-price');
+            const standardPrices = [50000, 70000, 90000];
+            billingToggle.addEventListener('change', function() {
+                pricingVals.forEach(function(p, idx) {
+                    if (billingToggle.checked) {
+                        const discounted = Math.floor(standardPrices[idx] * 0.8);
+                        p.innerHTML = '₨ ' + discounted.toLocaleString() + '<span>/mo</span>';
+                    } else {
+                        p.innerHTML = '₨ ' + standardPrices[idx].toLocaleString() + '<span>/mo</span>';
+                    }
+                });
+            });
+
+            // FAQ Accordion
+            const faqTriggers = document.querySelectorAll('.faq-trigger');
+            faqTriggers.forEach(function(t) {
+                t.addEventListener('click', function() {
+                    const parent = t.parentElement;
+                    const panel = t.nextElementSibling;
+                    const isOpen = parent.classList.contains('open');
+                    document.querySelectorAll('.faq-item').forEach(function(i) {
+                        i.classList.remove('open');
+                        i.querySelector('.faq-panel').style.maxHeight = null;
+                    });
+                    if (!isOpen) {
+                        parent.classList.add('open');
+                        panel.style.maxHeight = panel.scrollHeight + 'px';
+                    }
+                });
+            });
+
+            // Testimonial Slider
+            const track = document.getElementById('testimonial-track');
+            const slides = document.querySelectorAll('.testimonial-slide');
+            let currIdx = 0;
+            document.getElementById('slide-next').addEventListener('click', function() {
+                if (currIdx < slides.length - 1) { currIdx++; } else { currIdx = 0; }
+                track.style.transform = 'translateX(-' + (currIdx * 100) + '%)';
+            });
+            document.getElementById('slide-prev').addEventListener('click', function() {
+                if (currIdx > 0) { currIdx--; } else { currIdx = slides.length - 1; }
+                track.style.transform = 'translateX(-' + (currIdx * 100) + '%)';
+            });
+
+            // Counters
+            const counters = document.querySelectorAll('.counter');
+            const countObs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        const target = entry.target;
+                        const limit = parseInt(target.getAttribute('data-target'));
+                        let current = 0;
+                        const speed = limit / 40;
+                        const updater = setInterval(function() {
+                            current += speed;
+                            if (current >= limit) {
+                                target.innerText = (limit === 12) ? '12M+' : (limit === 150 ? '150+' : limit + '%');
+                                clearInterval(updater);
+                            } else {
+                                target.innerText = Math.floor(current) + (limit === 12 ? 'M+' : (limit === 150 ? '+' : '%'));
+                            }
+                        }, 25);
+                        countObs.unobserve(target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(function(c) { countObs.observe(c); });
+
+            // Skill Bars
+            function triggerSkillAnimations() {
+                const fillBars = document.querySelectorAll('.skill-bar-fill');
+                const skillObs = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            const bar = entry.target;
+                            bar.style.width = bar.getAttribute('data-width');
+                            skillObs.unobserve(bar);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                fillBars.forEach(function(b) { skillObs.observe(b); });
+            }
+        });
+    </script>
+</body>
+</html>
