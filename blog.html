@@ -256,6 +256,14 @@ html
             margin-bottom: 12px;
             line-height: 1.3;
         }
+        .blog-card-full h3 a {
+            color: var(--text);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .blog-card-full h3 a:hover {
+            color: var(--primary);
+        }
         .blog-card-full p {
             color: var(--text-muted);
             font-size: 0.95rem;
@@ -316,6 +324,26 @@ html
         }
         .blog-sidebar .sidebar-card ul li a .arrow {
             color: var(--primary);
+        }
+        .blog-sidebar .sidebar-card .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .blog-sidebar .sidebar-card .tag-cloud a {
+            padding: 6px 16px;
+            border-radius: 100px;
+            background: var(--surface-pure);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+        .blog-sidebar .sidebar-card .tag-cloud a:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
         }
 
         .cta-section-blog {
@@ -455,9 +483,9 @@ html
                             <span>July 10, 2026</span>
                             <span>5 min read</span>
                         </div>
-                        <h3>How to Overcome Proximity Algorithmic Restrictions</h3>
+                        <h3><a href="blog-post1.html">How to Overcome Proximity Algorithmic Restrictions</a></h3>
                         <p>Discover the exact steps required to claim maps package positioning outside your immediate physical operational zip code location safely. A must-read for <strong>local SEO experts</strong>.</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <a href="blog-post1.html" class="read-more">Read Full Article →</a>
                     </div>
                 </div>
 
@@ -472,9 +500,9 @@ html
                             <span>July 8, 2026</span>
                             <span>7 min read</span>
                         </div>
-                        <h3>The Ultimate Playbook for Rapid GMB Reinstatements</h3>
+                        <h3><a href="blog-post2.html">The Ultimate Playbook for Rapid GMB Reinstatements</a></h3>
                         <p>A calculated walkthrough mapping out how to prepare clean official documentation to resolve hard <strong>Google Business Profile</strong> suspensions smoothly.</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <a href="blog-post2.html" class="read-more">Read Full Article →</a>
                     </div>
                 </div>
 
@@ -489,9 +517,9 @@ html
                             <span>July 5, 2026</span>
                             <span>6 min read</span>
                         </div>
-                        <h3>Mastering JSON-LD Setup for Local Business Growth</h3>
+                        <h3><a href="blog-post3.html">Mastering JSON-LD Setup for Local Business Growth</a></h3>
                         <p>Learn how to precisely embed coordinate points and semantic relationship links into website codebases to speed up page crawl tracking.</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <a href="blog-post3.html" class="read-more">Read Full Article →</a>
                     </div>
                 </div>
 
@@ -506,9 +534,9 @@ html
                             <span>July 3, 2026</span>
                             <span>8 min read</span>
                         </div>
-                        <h3>Google Business Profile Optimization Checklist 2026</h3>
+                        <h3><a href="blog-post4.html">Google Business Profile Optimization Checklist 2026</a></h3>
                         <p>A complete checklist for optimizing your <strong>Google Business Profile</strong> to rank higher in local search results and attract more customers.</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <a href="blog-post4.html" class="read-more">Read Full Article →</a>
                     </div>
                 </div>
 
@@ -523,9 +551,9 @@ html
                             <span>June 28, 2026</span>
                             <span>5 min read</span>
                         </div>
-                        <h3>Georadial Mapping: The Future of Local SEO</h3>
+                        <h3><a href="blog-post5.html">Georadial Mapping: The Future of Local SEO</a></h3>
                         <p>Learn how advanced <strong>georadial mapping</strong> techniques can expand your service area and help you reach customers beyond your immediate location.</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <a href="blog-post5.html" class="read-more">Read Full Article →</a>
                     </div>
                 </div>
 
@@ -540,9 +568,9 @@ html
                             <span>June 25, 2026</span>
                             <span>6 min read</span>
                         </div>
-                        <h3>5 Common GMB Suspension Triggers and How to Avoid Them</h3>
+                        <h3><a href="blog-post6.html">5 Common GMB Suspension Triggers and How to Avoid Them</a></h3>
                         <p>Protect your business listing by understanding the most common reasons for <strong>GMB suspension</strong> and how to prevent them with <strong>Ranking Matters</strong>.</p>
-                        <a href="#" class="read-more">Read Full Article →</a>
+                        <a href="blog-post6.html" class="read-more">Read Full Article →</a>
                     </div>
                 </div>
 
@@ -557,19 +585,25 @@ html
                 <div class="sidebar-card glass">
                     <h4>📚 Popular Categories</h4>
                     <ul>
-                        <li><a href="#"><span class="arrow">→</span> Local SEO (12)</a></li>
-                        <li><a href="#"><span class="arrow">→</span> GMB Optimization (8)</a></li>
-                        <li><a href="#"><span class="arrow">→</span> Suspension Recovery (6)</a></li>
-                        <li><a href="#"><span class="arrow">→</span> Google Maps Ranking (10)</a></li>
-                        <li><a href="#"><span class="arrow">→</span> Citation Building (5)</a></li>
+                        <li><a href="blog.html?category=local-seo"><span class="arrow">→</span> Local SEO (12)</a></li>
+                        <li><a href="blog.html?category=gmb"><span class="arrow">→</span> GMB Optimization (8)</a></li>
+                        <li><a href="blog.html?category=suspension"><span class="arrow">→</span> Suspension Recovery (6)</a></li>
+                        <li><a href="blog.html?category=strategy"><span class="arrow">→</span> Strategy (10)</a></li>
+                        <li><a href="blog.html"><span class="arrow">→</span> All Posts (36)</a></li>
                     </ul>
                 </div>
                 <div class="sidebar-card glass">
-                    <h4>✉️ Subscribe for Updates</h4>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">Get the latest <strong>local SEO</strong> tips and strategies straight to your inbox.</p>
-                    <input type="email" placeholder="Your Email Address" style="width: 100%; padding: 14px 18px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface-pure); color: var(--text); font-family: var(--font-sans); font-size: 0.95rem; margin-bottom: 12px;">
-                    <button class="btn btn-primary" style="width: 100%;">Subscribe Now</button>
-                    <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 10px;">No spam. Unsubscribe anytime.</p>
+                    <h4>🏷️ Popular Tags</h4>
+                    <div class="tag-cloud">
+                        <a href="blog.html?tag=local-seo">#LocalSEO</a>
+                        <a href="blog.html?tag=gmb">#GMB</a>
+                        <a href="blog.html?tag=suspension">#Suspension</a>
+                        <a href="blog.html?tag=google-maps">#GoogleMaps</a>
+                        <a href="blog.html?tag=optimization">#Optimization</a>
+                        <a href="blog.html?tag=strategy">#Strategy</a>
+                        <a href="blog.html?tag=ranking">#Ranking</a>
+                        <a href="blog.html?tag=leads">#Leads</a>
+                    </div>
                 </div>
             </div>
         </div>
