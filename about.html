@@ -1,0 +1,661 @@
+html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ranking Matters | #1 Local SEO Expert in Lahore</title>
+    <meta name="description" content="Learn about Ranking Matters, the leading local SEO expert in Lahore. We help businesses rank #1 on Google Maps with data-driven strategies and proven results.">
+    <link rel="canonical" href="https://rankingmatters.pk/about.html">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a12">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rankingmatters.pk/about.html">
+    <meta property="og:title" content="About Us - Ranking Matters | #1 Local SEO Expert in Lahore">
+    <meta property="og:description" content="Learn about Ranking Matters, the leading local SEO expert in Lahore. We help businesses rank #1 on Google Maps with data-driven strategies.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Complete CSS from index.html --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-dark: #07070a;
+            --surface-dark: rgba(18, 18, 26, 0.7);
+            --surface-dark-pure: #0d0d14;
+            --border-dark: rgba(255, 255, 255, 0.06);
+            --text-dark: #f3f4f6;
+            --text-dark-muted: #9ca3af;
+            
+            --bg-light: #f9fafb;
+            --surface-light: rgba(255, 255, 255, 0.75);
+            --surface-light-pure: #ffffff;
+            --border-light: rgba(0, 0, 0, 0.06);
+            --text-light: #111827;
+            --text-light-muted: #4b5563;
+
+            --primary: #2563eb;
+            --primary-glow: rgba(37, 99, 235, 0.15);
+            --accent: #059669;
+            --accent-glow: rgba(5, 150, 105, 0.15);
+            --whatsapp: #25D366;
+            
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+            --radius-lg: 24px;
+            --radius-md: 14px;
+            --radius-sm: 8px;
+            --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        body.dark-mode {
+            --bg: var(--bg-dark);
+            --surface: var(--surface-dark);
+            --surface-pure: var(--surface-dark-pure);
+            --border: var(--border-dark);
+            --text: var(--text-dark);
+            --text-muted: var(--text-dark-muted);
+            --shadow: 0 20px 40px -15px rgba(0,0,0,0.7);
+            --nav-bg: rgba(7, 7, 10, 0.7);
+        }
+
+        body.light-mode {
+            --bg: var(--bg-light);
+            --surface: var(--surface-light);
+            --surface-pure: var(--surface-light-pure);
+            --border: var(--border-light);
+            --text: var(--text-light);
+            --text-muted: var(--text-light-muted);
+            --shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+            --nav-bg: rgba(249, 250, 251, 0.75);
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-sans); background-color: var(--bg); color: var(--text); overflow-x: hidden; transition: background-color 0.4s ease, color 0.4s ease; -webkit-font-smoothing: antialiased; }
+        
+        .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        @media(max-width: 768px) { .container { padding: 0 24px; } }
+        
+        section { padding: 140px 0; position: relative; }
+        @media(max-width: 768px) { section { padding: 90px 0; } }
+
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); width: 0%; z-index: 2000; transition: width 0.1s ease; }
+
+        #loader { 
+            position: fixed; inset: 0; background: var(--bg-dark); z-index: 3000; 
+            display: flex; justify-content: center; align-items: center; 
+            transition: opacity 0.8s ease, visibility 0.8s ease; 
+        }
+        #loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        .loader-logo { font-size: 2rem; font-weight: 800; letter-spacing: -1px; color: #fff; }
+        .loader-logo span { color: var(--primary); }
+        .loader-spinner { width: 48px; height: 48px; border: 4px solid rgba(255,255,255,0.1); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin-right: 20px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loader-content { display: flex; align-items: center; }
+
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; }
+        .section-title { font-size: clamp(2.5rem, 4vw, 3.75rem); font-weight: 800; margin-bottom: 24px; text-align: center; }
+        .section-subtitle { font-size: clamp(1.1rem, 1.5vw, 1.35rem); color: var(--text-muted); text-align: center; max-width: 700px; margin: 0 auto 80px; font-weight: 400; line-height: 1.5; }
+        .text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .glass { background: var(--surface); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--border); box-shadow: var(--shadow); }
+        .card { border-radius: var(--radius-lg); padding: 48px; transition: var(--transition); position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-8px); border-color: rgba(37, 99, 235, 0.3); }
+
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 36px; font-weight: 600; font-size: 0.95rem; border-radius: var(--radius-md); transition: var(--transition); text-decoration: none; position: relative; overflow: hidden; cursor: pointer; border: none; }
+        .btn-primary { background: linear-gradient(135deg, var(--primary), #1d4ed8); color: #ffffff; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.6); }
+        .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: var(--border); transform: translateY(-2px); }
+        .btn-whatsapp { background: #25D366; color: #ffffff; box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4); }
+        .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -5px rgba(37, 211, 102, 0.6); }
+        .btn-whatsapp svg { margin-right: 10px; }
+
+        .blob { position: absolute; border-radius: 50%; filter: blur(120px); z-index: -1; opacity: 0.15; pointer-events: none; transition: var(--transition); }
+
+        header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: var(--nav-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); transition: var(--transition); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 90px; }
+        .logo { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.04em; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
+        .logo span { color: var(--primary); }
+        .nav-menu { display: flex; align-items: center; gap: 40px; list-style: none; }
+        .nav-link { text-decoration: none; color: var(--text-muted); font-weight: 500; font-size: 0.95rem; transition: var(--transition); position: relative; }
+        .nav-link:hover, .nav-link.active { color: var(--text); }
+        .nav-link::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px; background: var(--primary); transition: var(--transition); }
+        .nav-link.active::after { width: 100%; }
+        .nav-actions { display: flex; align-items: center; gap: 20px; }
+
+        .theme-btn { background: none; border: 1px solid var(--border); width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--text); transition: var(--transition); font-size: 1.2rem; }
+        .theme-btn:hover { background: var(--border); }
+        .burger { display: none; cursor: pointer; background: none; border: none; padding: 8px; flex-direction: column; gap: 5px; }
+        .burger span { display: block; width: 24px; height: 2px; background: var(--text); transition: var(--transition); }
+
+        /* About Page Specific Styles */
+        .about-hero {
+            padding-top: 160px;
+            padding-bottom: 80px;
+            text-align: center;
+            position: relative;
+        }
+        .about-hero h1 {
+            font-size: clamp(3rem, 5vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.05;
+        }
+        .about-hero p {
+            font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .about-hero .blob-about {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: var(--primary);
+            border-radius: 50%;
+            filter: blur(140px);
+            opacity: 0.1;
+            top: -20%;
+            right: -10%;
+            z-index: -1;
+        }
+        .about-hero .blob-about-2 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.08;
+            bottom: -10%;
+            left: -5%;
+            z-index: -1;
+        }
+
+        .about-mission-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        .mission-card {
+            text-align: center;
+            padding: 48px 32px;
+        }
+        .mission-card .icon-box {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--primary-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-size: 2rem;
+        }
+        .mission-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+        }
+        .mission-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .about-story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .about-story-image {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            height: 500px;
+            box-shadow: var(--shadow);
+            background: var(--surface-pure);
+        }
+        .about-story-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .about-story-content .tag {
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+        .about-story-content h2 {
+            font-size: clamp(2rem, 3vw, 2.8rem);
+            margin-bottom: 24px;
+        }
+        .about-story-content p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        .team-card {
+            text-align: center;
+            padding: 40px 32px;
+        }
+        .team-card .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: var(--primary-glow);
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+            border: 3px solid var(--primary);
+        }
+        .team-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 4px;
+        }
+        .team-card .role {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .team-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .stats-grid-about {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            text-align: center;
+        }
+        .stats-grid-about .stat-item h4 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        .stats-grid-about .stat-item p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+
+        .cta-section-about {
+            text-align: center;
+            padding: 80px 40px;
+            border-radius: var(--radius-lg);
+        }
+        .cta-section-about h2 {
+            font-size: clamp(2rem, 3vw, 2.8rem);
+            margin-bottom: 20px;
+        }
+        .cta-section-about p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer { background: var(--surface-pure); border-top: 1px solid var(--border); padding: 100px 0 40px; }
+        .footer-grid { display: grid; grid-template-columns: 1.2fr repeat(3, 0.6fr); gap: 60px; margin-bottom: 80px; }
+        .footer-brand p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; max-width: 320px; }
+        .footer-col h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 24px; color: var(--text); }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+        .footer-links a { text-decoration: none; color: var(--text-muted); font-size: 0.95rem; transition: var(--transition); }
+        .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+        .footer-base { display: flex; justify-content: space-between; align-items: center; padding-top: 40px; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 20px; }
+        .footer-copyright { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* Fixed Actions */
+        #fixed-actions-container { position: fixed; bottom: 32px; right: 32px; display: flex; flex-direction: column; gap: 12px; z-index: 1500; }
+        .sticky-action-trigger { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: var(--transition); font-weight: 600; border: none; }
+        .sticky-btn-whatsapp { background: #25D366; color: #fff; width: auto; padding: 0 24px; border-radius: 100px; font-size: 0.9rem; gap: 8px; }
+        .sticky-btn-top { background: var(--surface-pure); border: 1px solid var(--border); color: var(--text); font-size: 1.2rem; opacity: 0; visibility: hidden; }
+        .sticky-btn-top.show { opacity: 1; visibility: visible; }
+        .sticky-btn-top:hover { transform: translateY(-4px); }
+        .sticky-btn-whatsapp svg { width: 20px; height: 20px; fill: #fff; }
+
+        /* Responsive */
+        @media(max-width: 1200px) {
+            .about-mission-grid { grid-template-columns: repeat(2, 1fr); }
+            .team-grid { grid-template-columns: repeat(2, 1fr); }
+            .stats-grid-about { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media(max-width: 992px) {
+            .about-story-grid { grid-template-columns: 1fr; gap: 48px; }
+            .about-story-image { height: 350px; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media(max-width: 768px) {
+            .nav-menu { display: none; position: absolute; top: 90px; left: 0; width: 100%; background: var(--surface-pure); border-bottom: 1px solid var(--border); flex-direction: column; padding: 40px; gap: 24px; text-align: center; }
+            .nav-menu.active { display: flex; }
+            .burger { display: flex; }
+            .about-mission-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: 1fr; }
+            .stats-grid-about { grid-template-columns: 1fr 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="dark-mode">
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-logo">Ranking<span>Matters</span></div>
+        </div>
+    </div>
+
+    <!-- Mouse Glow System -->
+    <div id="mouse-glow"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Ranking<span>Matters</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="index.html#case-studies" class="nav-link">Results</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-btn" id="theme-toggle">🌓</button>
+                <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp" style="padding: 10px 20px; font-size: 0.85rem;">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+                <button class="burger" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="blob-about"></div>
+        <div class="blob-about-2"></div>
+        <div class="container">
+            <h1>About <span class="text-gradient">Ranking Matters</span></h1>
+            <p>We are a performance-driven <strong>Local SEO</strong> and digital optimization agency specializing in helping local businesses claim the #1 spot on Google Maps. Our data-driven approach transforms <strong>Google Business Profiles</strong> into high-converting lead generation machines.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">Our <span class="text-gradient">Mission & Values</span></h2>
+            <p class="section-subtitle">We believe in transparency, data-driven decisions, and delivering real business growth through strategic local SEO.</p>
+            <div class="about-mission-grid">
+                <div class="card glass mission-card">
+                    <div class="icon-box">🎯</div>
+                    <h3>Data-Driven Results</h3>
+                    <p>We don't guess. Every strategy is backed by deep analytics, competitor research, and proven local SEO methodologies that deliver measurable ROI.</p>
+                </div>
+                <div class="card glass mission-card">
+                    <div class="icon-box">🤝</div>
+                    <h3>Client Partnership</h3>
+                    <p>We treat our clients as partners. Your success is our success. We work closely with you to understand your business goals and tailor our strategies accordingly.</p>
+                </div>
+                <div class="card glass mission-card">
+                    <div class="icon-box">🚀</div>
+                    <h3>Growth Focused</h3>
+                    <p>Every optimization we make is designed to generate real revenue. We don't chase vanity metrics — we chase qualified leads and customer calls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section>
+        <div class="container about-story-grid">
+            <div class="about-story-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=85" alt="Ranking Matters Team" loading="lazy">
+            </div>
+            <div class="about-story-content">
+                <span class="tag">Our Story</span>
+                <h2>The Journey Behind <span class="text-gradient">Ranking Matters</span></h2>
+                <p><strong>Ranking Matters</strong> was founded with a simple mission: to help local businesses in Lahore and across Pakistan dominate the <strong>Google Maps pack</strong> and generate high-quality leads. We saw too many businesses struggling with invisible listings, <strong>GMB suspensions</strong>, and outdated SEO tactics.</p>
+                <p>Today, <strong>Ranking Matters</strong> is recognized as the <strong>#1 Local SEO Expert in Lahore</strong>. We've helped hundreds of businesses across diverse industries — from HVAC contractors to bridal studios — achieve top rankings on Google Maps and explode their local revenue.</p>
+                <p>Our team of <strong>local SEO experts</strong> uses cutting-edge techniques like <strong>georadial mapping</strong>, <strong>JSON-LD schema architecture</strong>, and <strong>Google Business Profile optimization</strong> to deliver results that matter.</p>
+                <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat with Our Team
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">Our <span class="text-gradient">Impact in Numbers</span></h2>
+            <p class="section-subtitle">Real results that speak for themselves. Here's what we've achieved for our clients.</p>
+            <div class="stats-grid-about">
+                <div class="stat-item">
+                    <h4>150+</h4>
+                    <p>GMB Suspensions Fixed</p>
+                </div>
+                <div class="stat-item">
+                    <h4>87%</h4>
+                    <p>Average Call Volume Boost</p>
+                </div>
+                <div class="stat-item">
+                    <h4>12M+</h4>
+                    <p>Leads Generated</p>
+                </div>
+                <div class="stat-item">
+                    <h4>500+</h4>
+                    <p>Happy Clients Served</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Meet Our <span class="text-gradient">Expert Team</span></h2>
+            <p class="section-subtitle">The passionate <strong>local SEO experts</strong> behind <strong>Ranking Matters</strong>, dedicated to your success.</p>
+            <div class="team-grid">
+                <div class="card glass team-card">
+                    <div class="avatar">AQ</div>
+                    <h3>Arslan Qayyum</h3>
+                    <div class="role">Founder & Lead SEO Strategist</div>
+                    <p>With over 8 years of experience in <strong>local SEO</strong>, Arslan specializes in <strong>Google Business Profile optimization</strong> and <strong>GMB suspension recovery</strong>.</p>
+                </div>
+                <div class="card glass team-card">
+                    <div class="avatar">SK</div>
+                    <h3>Sarah Khan</h3>
+                    <div class="role">Senior Local SEO Specialist</div>
+                    <p>Sarah is an expert in <strong>georadial mapping</strong> and <strong>local citation engineering</strong>, helping businesses expand their reach across multiple zip codes.</p>
+                </div>
+                <div class="card glass team-card">
+                    <div class="avatar">AA</div>
+                    <h3>Ahmed Ali</h3>
+                    <div class="role">Technical SEO & Schema Expert</div>
+                    <p>Ahmed specializes in <strong>JSON-LD schema architecture</strong> and advanced technical SEO, ensuring your website communicates perfectly with Google's algorithms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="text-gradient">Ranking Matters</span></h2>
+            <p class="section-subtitle">We are not just another SEO agency. We are your partners in local market domination.</p>
+            <div class="about-mission-grid">
+                <div class="card glass mission-card">
+                    <div class="icon-box">🏆</div>
+                    <h3>Proven Track Record</h3>
+                    <p>We've helped hundreds of businesses achieve #1 rankings on Google Maps. Our case studies speak for themselves.</p>
+                </div>
+                <div class="card glass mission-card">
+                    <div class="icon-box">🔬</div>
+                    <h3>Data-Driven Approach</h3>
+                    <p>Every decision we make is backed by data and analytics. We don't rely on guesswork — we rely on results.</p>
+                </div>
+                <div class="card glass mission-card">
+                    <div class="icon-box">💎</div>
+                    <h3>Transparent Reporting</h3>
+                    <p>We provide clear, transparent reports showing exactly what we're doing and the results we're achieving for your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section>
+        <div class="container">
+            <div class="card glass cta-section-about">
+                <h2>Ready to <span class="text-gradient">Dominate</span> Your Local Market?</h2>
+                <p>Partner with <strong>Ranking Matters</strong> — the <strong>#1 Local SEO Expert in Lahore</strong> — and watch your business grow.</p>
+                <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp" style="padding: 18px 44px; font-size: 1.05rem;">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Ranking<span>Matters</span></a>
+                <p>Advanced algorithmic optimization mechanics engineered explicitly to scale inbound customer commercial phone calls and local visibility indicators.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">GBP Optimization</a></li>
+                    <li><a href="services.html">GMB Recovery</a></li>
+                    <li><a href="services.html">Local Citations</a></li>
+                    <li><a href="services.html">Landing Pages</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:+923314349664">+92 331 4349664</a></li>
+                    <li><a href="mailto:shanyaqoob730@gmail.com">shanyaqoob730@gmail.com</a></li>
+                    <li><a href="https://wa.me/923314349664" target="_blank">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-base">
+            <div class="footer-copyright">&copy; 2026 <strong>Ranking Matters</strong>. All Rights Reserved.</div>
+            <a href="https://wa.me/923314349664" target="_blank" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+            </a>
+        </div>
+    </footer>
+
+    <!-- Fixed Actions -->
+    <div id="fixed-actions-container">
+        <a href="https://wa.me/923314349664" target="_blank" class="sticky-action-trigger sticky-btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+        </a>
+        <button class="sticky-action-trigger sticky-btn-top" id="back-to-top">↑</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.getElementById('loader');
+            setTimeout(function() {
+                loader.classList.add('hidden');
+            }, 800);
+
+            window.addEventListener('scroll', function() {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById('scroll-progress').style.width = scrolled + '%';
+                
+                const btt = document.getElementById('back-to-top');
+                if (window.scrollY > 600) {
+                    btt.classList.add('show');
+                } else {
+                    btt.classList.remove('show');
+                }
+            });
+
+            document.getElementById('back-to-top').addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                document.body.classList.toggle('light-mode');
+            });
+
+            // Mouse Glow
+            const glow = document.getElementById('mouse-glow');
+            document.addEventListener('mousemove', function(e) {
+                glow.style.opacity = '1';
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+            });
+            document.addEventListener('mouseleave', function() {
+                glow.style.opacity = '0';
+            });
+        });
+    </script>
+</body>
+</html>
