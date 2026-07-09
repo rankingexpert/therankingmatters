@@ -1,0 +1,724 @@
+html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Ranking Matters | #1 Local SEO Expert in Lahore</title>
+    <meta name="description" content="Read the latest insights, tips, and strategies from Ranking Matters. Stay ahead with expert local SEO advice, GMB optimization guides, and more.">
+    <link rel="canonical" href="https://rankingmatters.pk/blog.html">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a12">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rankingmatters.pk/blog.html">
+    <meta property="og:title" content="Blog - Ranking Matters | #1 Local SEO Expert in Lahore">
+    <meta property="og:description" content="Read the latest insights, tips, and strategies from Ranking Matters. Stay ahead with expert local SEO advice.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=1200&q=80">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Complete CSS from index.html --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-dark: #07070a;
+            --surface-dark: rgba(18, 18, 26, 0.7);
+            --surface-dark-pure: #0d0d14;
+            --border-dark: rgba(255, 255, 255, 0.06);
+            --text-dark: #f3f4f6;
+            --text-dark-muted: #9ca3af;
+            
+            --bg-light: #f9fafb;
+            --surface-light: rgba(255, 255, 255, 0.75);
+            --surface-light-pure: #ffffff;
+            --border-light: rgba(0, 0, 0, 0.06);
+            --text-light: #111827;
+            --text-light-muted: #4b5563;
+
+            --primary: #2563eb;
+            --primary-glow: rgba(37, 99, 235, 0.15);
+            --accent: #059669;
+            --accent-glow: rgba(5, 150, 105, 0.15);
+            --whatsapp: #25D366;
+            
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+            --radius-lg: 24px;
+            --radius-md: 14px;
+            --radius-sm: 8px;
+            --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        body.dark-mode {
+            --bg: var(--bg-dark);
+            --surface: var(--surface-dark);
+            --surface-pure: var(--surface-dark-pure);
+            --border: var(--border-dark);
+            --text: var(--text-dark);
+            --text-muted: var(--text-dark-muted);
+            --shadow: 0 20px 40px -15px rgba(0,0,0,0.7);
+            --nav-bg: rgba(7, 7, 10, 0.7);
+        }
+
+        body.light-mode {
+            --bg: var(--bg-light);
+            --surface: var(--surface-light);
+            --surface-pure: var(--surface-light-pure);
+            --border: var(--border-light);
+            --text: var(--text-light);
+            --text-muted: var(--text-light-muted);
+            --shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+            --nav-bg: rgba(249, 250, 251, 0.75);
+        }
+
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-sans); background-color: var(--bg); color: var(--text); overflow-x: hidden; transition: background-color 0.4s ease, color 0.4s ease; -webkit-font-smoothing: antialiased; }
+        
+        .container { width: 100%; max-width: 1400px; margin: 0 auto; padding: 0 40px; }
+        @media(max-width: 768px) { .container { padding: 0 24px; } }
+        
+        section { padding: 140px 0; position: relative; }
+        @media(max-width: 768px) { section { padding: 90px 0; } }
+
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--primary), var(--accent)); width: 0%; z-index: 2000; transition: width 0.1s ease; }
+
+        #loader { 
+            position: fixed; inset: 0; background: var(--bg-dark); z-index: 3000; 
+            display: flex; justify-content: center; align-items: center; 
+            transition: opacity 0.8s ease, visibility 0.8s ease; 
+        }
+        #loader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+        .loader-logo { font-size: 2rem; font-weight: 800; letter-spacing: -1px; color: #fff; }
+        .loader-logo span { color: var(--primary); }
+        .loader-spinner { width: 48px; height: 48px; border: 4px solid rgba(255,255,255,0.1); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; margin-right: 20px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .loader-content { display: flex; align-items: center; }
+
+        h1, h2, h3, h4 { font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; }
+        .section-title { font-size: clamp(2.5rem, 4vw, 3.75rem); font-weight: 800; margin-bottom: 24px; text-align: center; }
+        .section-subtitle { font-size: clamp(1.1rem, 1.5vw, 1.35rem); color: var(--text-muted); text-align: center; max-width: 700px; margin: 0 auto 80px; font-weight: 400; line-height: 1.5; }
+        .text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .glass { background: var(--surface); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid var(--border); box-shadow: var(--shadow); }
+        .card { border-radius: var(--radius-lg); padding: 48px; transition: var(--transition); position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-8px); border-color: rgba(37, 99, 235, 0.3); }
+
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 18px 36px; font-weight: 600; font-size: 0.95rem; border-radius: var(--radius-md); transition: var(--transition); text-decoration: none; position: relative; overflow: hidden; cursor: pointer; border: none; }
+        .btn-primary { background: linear-gradient(135deg, var(--primary), #1d4ed8); color: #ffffff; box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.6); }
+        .btn-secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+        .btn-secondary:hover { background: var(--border); transform: translateY(-2px); }
+        .btn-whatsapp { background: #25D366; color: #ffffff; box-shadow: 0 10px 25px -5px rgba(37, 211, 102, 0.4); }
+        .btn-whatsapp:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -5px rgba(37, 211, 102, 0.6); }
+        .btn-whatsapp svg { margin-right: 10px; }
+
+        .blob { position: absolute; border-radius: 50%; filter: blur(120px); z-index: -1; opacity: 0.15; pointer-events: none; transition: var(--transition); }
+
+        header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: var(--nav-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); transition: var(--transition); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 90px; }
+        .logo { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.04em; text-decoration: none; color: var(--text); display: flex; align-items: center; gap: 8px; }
+        .logo span { color: var(--primary); }
+        .nav-menu { display: flex; align-items: center; gap: 40px; list-style: none; }
+        .nav-link { text-decoration: none; color: var(--text-muted); font-weight: 500; font-size: 0.95rem; transition: var(--transition); position: relative; }
+        .nav-link:hover, .nav-link.active { color: var(--text); }
+        .nav-link::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px; background: var(--primary); transition: var(--transition); }
+        .nav-link.active::after { width: 100%; }
+        .nav-actions { display: flex; align-items: center; gap: 20px; }
+
+        .theme-btn { background: none; border: 1px solid var(--border); width: 44px; height: 44px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--text); transition: var(--transition); font-size: 1.2rem; }
+        .theme-btn:hover { background: var(--border); }
+        .burger { display: none; cursor: pointer; background: none; border: none; padding: 8px; flex-direction: column; gap: 5px; }
+        .burger span { display: block; width: 24px; height: 2px; background: var(--text); transition: var(--transition); }
+
+        /* Blog Page Specific Styles */
+        .blog-hero {
+            padding-top: 160px;
+            padding-bottom: 80px;
+            text-align: center;
+            position: relative;
+        }
+        .blog-hero h1 {
+            font-size: clamp(3rem, 5vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.05;
+        }
+        .blog-hero p {
+            font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+            color: var(--text-muted);
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .blog-hero .blob-blog {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: var(--primary);
+            border-radius: 50%;
+            filter: blur(140px);
+            opacity: 0.1;
+            top: -20%;
+            right: -10%;
+            z-index: -1;
+        }
+        .blog-hero .blob-blog-2 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.08;
+            bottom: -10%;
+            left: -5%;
+            z-index: -1;
+        }
+
+        .blog-filter {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+        }
+        .blog-filter-btn {
+            padding: 12px 28px;
+            border-radius: 100px;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        .blog-filter-btn.active, .blog-filter-btn:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        .blog-grid-full {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+        .blog-card-full {
+            overflow: hidden;
+            border-radius: var(--radius-lg);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            transition: var(--transition);
+        }
+        .blog-card-full:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.15);
+        }
+        .blog-card-full .blog-img {
+            height: 260px;
+            overflow: hidden;
+            background: var(--surface-pure);
+        }
+        .blog-card-full .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .blog-card-full:hover .blog-img img {
+            transform: scale(1.05);
+        }
+        .blog-card-full .blog-content {
+            padding: 32px;
+        }
+        .blog-card-full .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .blog-card-full .blog-meta .category {
+            color: var(--primary);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .blog-card-full h3 {
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        .blog-card-full p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .blog-card-full .read-more {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+        .blog-card-full .read-more:hover {
+            gap: 12px;
+            color: var(--accent);
+        }
+
+        .blog-sidebar {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 60px;
+        }
+        .blog-sidebar .sidebar-card {
+            padding: 32px;
+            border-radius: var(--radius-lg);
+            background: var(--surface);
+            border: 1px solid var(--border);
+        }
+        .blog-sidebar .sidebar-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 16px;
+        }
+        .blog-sidebar .sidebar-card ul {
+            list-style: none;
+        }
+        .blog-sidebar .sidebar-card ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .blog-sidebar .sidebar-card ul li:last-child {
+            border-bottom: none;
+        }
+        .blog-sidebar .sidebar-card ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .blog-sidebar .sidebar-card ul li a:hover {
+            color: var(--primary);
+            padding-left: 4px;
+        }
+        .blog-sidebar .sidebar-card ul li a .arrow {
+            color: var(--primary);
+        }
+
+        .cta-section-blog {
+            text-align: center;
+            padding: 80px 40px;
+            border-radius: var(--radius-lg);
+        }
+        .cta-section-blog h2 {
+            font-size: clamp(2rem, 3vw, 2.8rem);
+            margin-bottom: 20px;
+        }
+        .cta-section-blog p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer { background: var(--surface-pure); border-top: 1px solid var(--border); padding: 100px 0 40px; }
+        .footer-grid { display: grid; grid-template-columns: 1.2fr repeat(3, 0.6fr); gap: 60px; margin-bottom: 80px; }
+        .footer-brand p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-top: 16px; max-width: 320px; }
+        .footer-col h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 24px; color: var(--text); }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+        .footer-links a { text-decoration: none; color: var(--text-muted); font-size: 0.95rem; transition: var(--transition); }
+        .footer-links a:hover { color: var(--primary); padding-left: 4px; }
+        .footer-base { display: flex; justify-content: space-between; align-items: center; padding-top: 40px; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 20px; }
+        .footer-copyright { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* Fixed Actions */
+        #fixed-actions-container { position: fixed; bottom: 32px; right: 32px; display: flex; flex-direction: column; gap: 12px; z-index: 1500; }
+        .sticky-action-trigger { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; text-decoration: none; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: var(--transition); font-weight: 600; border: none; }
+        .sticky-btn-whatsapp { background: #25D366; color: #fff; width: auto; padding: 0 24px; border-radius: 100px; font-size: 0.9rem; gap: 8px; }
+        .sticky-btn-top { background: var(--surface-pure); border: 1px solid var(--border); color: var(--text); font-size: 1.2rem; opacity: 0; visibility: hidden; }
+        .sticky-btn-top.show { opacity: 1; visibility: visible; }
+        .sticky-btn-top:hover { transform: translateY(-4px); }
+        .sticky-btn-whatsapp svg { width: 20px; height: 20px; fill: #fff; }
+
+        /* Responsive */
+        @media(max-width: 1200px) {
+            .blog-grid-full { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media(max-width: 992px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+            .blog-sidebar { grid-template-columns: 1fr; }
+        }
+        @media(max-width: 768px) {
+            .nav-menu { display: none; position: absolute; top: 90px; left: 0; width: 100%; background: var(--surface-pure); border-bottom: 1px solid var(--border); flex-direction: column; padding: 40px; gap: 24px; text-align: center; }
+            .nav-menu.active { display: flex; }
+            .burger { display: flex; }
+            .blog-grid-full { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="dark-mode">
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-logo">Ranking<span>Matters</span></div>
+        </div>
+    </div>
+
+    <!-- Mouse Glow System -->
+    <div id="mouse-glow"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Ranking<span>Matters</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="index.html#case-studies" class="nav-link">Results</a></li>
+                <li><a href="index.html#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-btn" id="theme-toggle">🌓</button>
+                <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp" style="padding: 10px 20px; font-size: 0.85rem;">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    WhatsApp
+                </a>
+                <button class="burger" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="blob-blog"></div>
+        <div class="blob-blog-2"></div>
+        <div class="container">
+            <h1>Our <span class="text-gradient">SEO Insights</span></h1>
+            <p>Stay ahead of the competition with expert <strong>local SEO</strong> tips, <strong>Google Business Profile optimization</strong> guides, and actionable strategies from the team at <strong>Ranking Matters</strong>.</p>
+        </div>
+    </section>
+
+    <!-- Blog Filter -->
+    <section style="padding-top: 0; padding-bottom: 40px;">
+        <div class="container">
+            <div class="blog-filter">
+                <button class="blog-filter-btn active" data-filter="all">All Posts</button>
+                <button class="blog-filter-btn" data-filter="local-seo">Local SEO</button>
+                <button class="blog-filter-btn" data-filter="gmb">GMB Optimization</button>
+                <button class="blog-filter-btn" data-filter="suspension">Suspension Recovery</button>
+                <button class="blog-filter-btn" data-filter="strategy">Strategy</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section style="padding-top: 0;">
+        <div class="container">
+            <div class="blog-grid-full">
+
+                <!-- Blog Post 1 -->
+                <div class="blog-card-full" data-category="local-seo">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?auto=format&fit=crop&w=600&q=80" alt="How to Overcome Proximity Algorithmic Restrictions" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Local SEO</span>
+                            <span>July 10, 2026</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3>How to Overcome Proximity Algorithmic Restrictions</h3>
+                        <p>Discover the exact steps required to claim maps package positioning outside your immediate physical operational zip code location safely. A must-read for <strong>local SEO experts</strong>.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card-full" data-category="suspension">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="The Ultimate Playbook for Rapid GMB Reinstatements" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Suspension Recovery</span>
+                            <span>July 8, 2026</span>
+                            <span>7 min read</span>
+                        </div>
+                        <h3>The Ultimate Playbook for Rapid GMB Reinstatements</h3>
+                        <p>A calculated walkthrough mapping out how to prepare clean official documentation to resolve hard <strong>Google Business Profile</strong> suspensions smoothly.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-card-full" data-category="strategy">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Mastering JSON-LD Setup for Local Business Growth" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Strategy</span>
+                            <span>July 5, 2026</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3>Mastering JSON-LD Setup for Local Business Growth</h3>
+                        <p>Learn how to precisely embed coordinate points and semantic relationship links into website codebases to speed up page crawl tracking.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="blog-card-full" data-category="gmb">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1579202673506-ca3ce28943ef?auto=format&fit=crop&w=600&q=80" alt="Google Business Profile Optimization Checklist 2026" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">GMB Optimization</span>
+                            <span>July 3, 2026</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3>Google Business Profile Optimization Checklist 2026</h3>
+                        <p>A complete checklist for optimizing your <strong>Google Business Profile</strong> to rank higher in local search results and attract more customers.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="blog-card-full" data-category="local-seo">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Georadial Mapping: The Future of Local SEO" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Local SEO</span>
+                            <span>June 28, 2026</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h3>Georadial Mapping: The Future of Local SEO</h3>
+                        <p>Learn how advanced <strong>georadial mapping</strong> techniques can expand your service area and help you reach customers beyond your immediate location.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="blog-card-full" data-category="suspension">
+                    <div class="blog-img">
+                        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7eed?auto=format&fit=crop&w=600&q=80" alt="5 Common GMB Suspension Triggers and How to Avoid Them" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="category">Suspension Recovery</span>
+                            <span>June 25, 2026</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3>5 Common GMB Suspension Triggers and How to Avoid Them</h3>
+                        <p>Protect your business listing by understanding the most common reasons for <strong>GMB suspension</strong> and how to prevent them with <strong>Ranking Matters</strong>.</p>
+                        <a href="#" class="read-more">Read Full Article →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar / Newsletter Section -->
+    <section class="glass" style="border-left:none; border-right:none; border-radius:0;">
+        <div class="container">
+            <div class="blog-sidebar">
+                <div class="sidebar-card glass">
+                    <h4>📚 Popular Categories</h4>
+                    <ul>
+                        <li><a href="#"><span class="arrow">→</span> Local SEO (12)</a></li>
+                        <li><a href="#"><span class="arrow">→</span> GMB Optimization (8)</a></li>
+                        <li><a href="#"><span class="arrow">→</span> Suspension Recovery (6)</a></li>
+                        <li><a href="#"><span class="arrow">→</span> Google Maps Ranking (10)</a></li>
+                        <li><a href="#"><span class="arrow">→</span> Citation Building (5)</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-card glass">
+                    <h4>✉️ Subscribe for Updates</h4>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px;">Get the latest <strong>local SEO</strong> tips and strategies straight to your inbox.</p>
+                    <input type="email" placeholder="Your Email Address" style="width: 100%; padding: 14px 18px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--surface-pure); color: var(--text); font-family: var(--font-sans); font-size: 0.95rem; margin-bottom: 12px;">
+                    <button class="btn btn-primary" style="width: 100%;">Subscribe Now</button>
+                    <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 10px;">No spam. Unsubscribe anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section>
+        <div class="container">
+            <div class="card glass cta-section-blog">
+                <h2>Want to <span class="text-gradient">Dominate</span> the Google Maps Pack?</h2>
+                <p>Partner with <strong>Ranking Matters</strong> — the <strong>#1 Local SEO Expert in Lahore</strong> — and watch your business grow with our proven <strong>local SEO</strong> strategies.</p>
+                <a href="https://wa.me/923314349664" target="_blank" class="btn btn-whatsapp" style="padding: 18px 44px; font-size: 1.05rem;">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Ranking<span>Matters</span></a>
+                <p>Advanced algorithmic optimization mechanics engineered explicitly to scale inbound customer commercial phone calls and local visibility indicators.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">GBP Optimization</a></li>
+                    <li><a href="services.html">GMB Recovery</a></li>
+                    <li><a href="services.html">Local Citations</a></li>
+                    <li><a href="services.html">Landing Pages</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:+923314349664">+92 331 4349664</a></li>
+                    <li><a href="mailto:shanyaqoob730@gmail.com">shanyaqoob730@gmail.com</a></li>
+                    <li><a href="https://wa.me/923314349664" target="_blank">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-base">
+            <div class="footer-copyright">&copy; 2026 <strong>Ranking Matters</strong>. All Rights Reserved.</div>
+            <a href="https://wa.me/923314349664" target="_blank" style="color: var(--text-muted); text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                WhatsApp
+            </a>
+        </div>
+    </footer>
+
+    <!-- Fixed Actions -->
+    <div id="fixed-actions-container">
+        <a href="https://wa.me/923314349664" target="_blank" class="sticky-action-trigger sticky-btn-whatsapp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+        </a>
+        <button class="sticky-action-trigger sticky-btn-top" id="back-to-top">↑</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loader = document.getElementById('loader');
+            setTimeout(function() {
+                loader.classList.add('hidden');
+            }, 800);
+
+            window.addEventListener('scroll', function() {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                document.getElementById('scroll-progress').style.width = scrolled + '%';
+                
+                const btt = document.getElementById('back-to-top');
+                if (window.scrollY > 600) {
+                    btt.classList.add('show');
+                } else {
+                    btt.classList.remove('show');
+                }
+            });
+
+            document.getElementById('back-to-top').addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            const menuToggle = document.getElementById('menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('dark-mode');
+                document.body.classList.toggle('light-mode');
+            });
+
+            const glow = document.getElementById('mouse-glow');
+            document.addEventListener('mousemove', function(e) {
+                glow.style.opacity = '1';
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+            });
+            document.addEventListener('mouseleave', function() {
+                glow.style.opacity = '0';
+            });
+
+            // Blog Filter
+            const filterBtns = document.querySelectorAll('.blog-filter-btn');
+            const blogCards = document.querySelectorAll('.blog-card-full');
+            filterBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(function(b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    const target = btn.getAttribute('data-filter');
+                    blogCards.forEach(function(card) {
+                        if (target === 'all' || card.getAttribute('data-category') === target) {
+                            card.style.display = 'block';
+                            card.style.animation = 'fadeIn 0.6s forwards';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Add fadeIn animation
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes fadeIn {
+                    from { opacity: 0; transform: translateY(20px); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
